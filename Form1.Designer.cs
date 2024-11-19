@@ -32,7 +32,10 @@
             textBox1 = new TextBox();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -63,17 +66,37 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Red;
-            pictureBox1.Location = new Point(23, 193);
+            pictureBox1.Location = new Point(49, 196);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 62);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Green;
+            pictureBox2.Location = new Point(190, 196);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(125, 62);
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(230, 161);
+            label3.Name = "label3";
+            label3.Size = new Size(47, 20);
+            label3.TabIndex = 6;
+            label3.Text = "Verde";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(textBox1);
@@ -82,6 +105,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -92,5 +116,7 @@
         private TextBox textBox1;
         private Label label2;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Label label3;
     }
 }
