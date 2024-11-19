@@ -34,8 +34,11 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label3 = new Label();
+            pictureBox3 = new PictureBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -90,11 +93,31 @@
             label3.TabIndex = 6;
             label3.Text = "Verde";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Blue;
+            pictureBox3.Location = new Point(338, 194);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(125, 62);
+            pictureBox3.TabIndex = 7;
+            pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(372, 161);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 20);
+            label4.TabIndex = 8;
+            label4.Text = "Azul";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(pictureBox3);
             Controls.Add(label3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -106,6 +129,7 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,5 +142,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label3;
+        private PictureBox pictureBox3;
+        private Label label4;
     }
 }
